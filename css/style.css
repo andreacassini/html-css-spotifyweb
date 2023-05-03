@@ -29,6 +29,7 @@ body{
 }
 .row{
     width: 100%;
+    background-color: red;
 }
 
 .inline{
@@ -141,16 +142,22 @@ h2{
     align-items: center;
     position: fixed;
     bottom: 0;
-    z-index: 100;
+    left: 0;
+    z-index: 400;
     background-color: rgba(40,41,41,255);
-}
-
-.col-350{
-    height: 100%;
 }
 
 #img-bottom-bar{
     width: 80px;
+}
+
+.song{
+    display: flex;
+    align-items: center;
+}
+
+.preview{
+    
 }
 /* RESPONSIVE */
 

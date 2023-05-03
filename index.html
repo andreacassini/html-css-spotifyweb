@@ -7,6 +7,7 @@
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Konkhmer+Sleokchher&family=Rubik+Mono+One&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
         <link rel="stylesheet" href="./css/style.css">
         <title>Spotify</title>
     </head>
@@ -144,34 +145,39 @@
         </div>
         <!-- BOTTOM BAR -->
         <section>
-            <div class="row" id="bottom-bar">
-                <div class="col-350">
-                    <div class="row">
-                        <div class="left-content">
-                            <img src="./spotify/img/sinister.jpeg" id="img-bottom-bar">
-                        </div>
-                        <div class="right-content"></div>
+            <div id="bottom-bar">
+                <div class="song">
+                    <div class="preview">
+                        <img src="./spotify/img/sinister.jpeg" alt="sinister" id="img-bottom-bar">
+                    </div>
+                    <div class="title">
+                        <h3>Sinister</h3>
+                        <p>Brano Nome</p>
+                    </div>
+                    <div class="folder">
+                        <i class="fa-regular fa-heart" style="color: #828282;"></i>
+                        <i class="fa-regular fa-folder" style="color: #828282;"></i>
                     </div>
                 </div>
-                <div class="col-350">
-                    <div class="row">
-                        <div class="left-content">
-                            left
-                        </div>
-                        <div class="right-content">
-                            right
-                        </div>
+                <div class="play">
+                    <div class="playing">
+                        <i class="fa-solid fa-shuffle" style="color: #fefeff;"></i>
+                        <i class="fa-solid fa-backward-step" style="color: #fefeff;"></i>
+                        <i class="fa-regular fa-circle-play" style="color: #fefeff;"></i>
+                        <i class="fa-solid fa-forward-step" style="color: #fefeff;"></i>
+                        <i class="fa-solid fa-rotate-right" style="color: #fefeff;"></i>
+                    </div>
+                    <div class="time">
+                        0:25
+                        <input type="range">
+                        4:35
                     </div>
                 </div>
-                <div class="col-350">
-                    <div class="row">
-                        <div class="left-content">
-                            left
-                        </div>
-                        <div class="right-content">
-                            right
-                        </div>
-                    </div>
+                <div class="volume">
+                    <i class="fa-solid fa-list" style="color: #fefeff;"></i>
+                    <i class="fa-solid fa-tv" style="color: #fefeff;"></i>
+                    <i class="fa-solid fa-volume-high" style="color: #fefeff;"></i>
+                    <input type="range">
                 </div>
             </div>
         </section>
