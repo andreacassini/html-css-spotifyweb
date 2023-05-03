@@ -20,6 +20,9 @@
     display: flex;
 }
 
+.round{
+    border-radius: 50%;
+}
 .row{
     max-width: 100%;
     background-color: red;
@@ -69,7 +72,6 @@ ul{
 /* MAIN */
 .col-250{
     width: calc(100% / 6 - 10px);
-    background-color: green;
     margin: 5px;
     text-align: center;
     padding-top: 5px;
@@ -77,9 +79,10 @@ ul{
 
 /* BOTTOM BAR */
 #bottom-bar{
+    width: 100%;
     display: flex;
     justify-content: space-between;
-    align-items: flex-end;
+    align-items: center;
     position: fixed;
     bottom: 0;
     z-index: 100;
@@ -90,6 +93,9 @@ ul{
     height: 100%;
 }
 
+#img-bottom-bar{
+    width: 80px;
+}
 /* RESPONSIVE */
 
     /* BREAK ICONS */
