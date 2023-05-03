@@ -7,13 +7,15 @@
 /* UTILITIES */
 .big-container{
     width: 100vw;
-    height: 2000px;
-    background-color: grey;
+    height: 100vh;
+    background-color: rgba(20,24,35,255);
 }
 .container{
-    width: 100vw;
+    width: 100%;
+    height: 100%;
     background-color: rgba(20,24,35,255);
-    padding-top: 100px;
+    margin-top: 100px;
+    margin-left: 250px;
 }
 
 .flex{
@@ -47,6 +49,14 @@ ul{
 .center{
     text-align: center;
 }
+
+.margin-bottom-100{
+    margin-bottom: 100px;
+}
+
+.margin-top-180{
+    margin-top: 180px;
+}
 /* LG FIRST */
 /* NAV BAR */
 .nav-bar, .col-350{
@@ -54,7 +64,7 @@ ul{
 }
 .nav-bar{
     height: 100%;
-    position: relative;
+    position: fixed;
     z-index: 70;
     background-color: black;
 }
@@ -124,6 +134,9 @@ ul{
         .col-250{
             width: calc(100% / 4 - 10px);
         }
+        .big-container{
+            height: calc(100vh + 100px);
+        }
     }
 
     /* S */
@@ -134,6 +147,9 @@ ul{
         .img-fluid{
             width: 80%;
         }
+        .big-container{
+            height: calc(100vh + 550px);
+        }
     }
     /* MOBILE */
     @media screen and (max-width: 750px){
@@ -141,7 +157,7 @@ ul{
             width: 70px;
         }
         .container{
-            width: calc(100vw - 70px);
+            margin-left: 70px;
         }
         .compressed{
             display: flex;
