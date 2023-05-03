@@ -11,7 +11,7 @@
     background-color: grey;
 }
 .container{
-    width: calc(100vw - 350px);
+    width: 100vw;
     background-color: rgba(20,24,35,255);
     padding-top: 100px;
 }
@@ -21,8 +21,7 @@
 }
 
 .row{
-    width: 100%;
-    height: 100px;
+    max-width: 100%;
     background-color: red;
 }
 
@@ -35,10 +34,17 @@ ul{
     padding: 10px;
 }
 
+.img-fluid{
+    width: 250px;
+}
+
+.md{
+    flex-wrap: wrap;
+}
 /* LG FIRST */
 /* NAV BAR */
 .nav-bar, .col-350{
-    width: 350px;
+    width: 250px;
     border: 1px solid white;
 }
 .nav-bar{
@@ -62,10 +68,11 @@ ul{
 
 /* MAIN */
 .col-250{
-    width: 80px;
-    height: 80px;
+    width: calc(100% / 6 - 10px);
     background-color: green;
-    margin: 20px;
+    margin: 5px;
+    text-align: center;
+    padding-top: 5px;
 }
 
 /* BOTTOM BAR */
@@ -83,12 +90,36 @@ ul{
     height: 100%;
 }
 
-/* MOBILE */
-@media screen and (max-width: 900px){
-    .nav-bar{
-        width: 70px;
+/* RESPONSIVE */
+
+    /* BREAK ICONS */
+    @media screen and (max-width: 1810px){
+        .img-fluid{
+            width: 100%;
+        }
     }
-    .container{
-        width: calc(100vw - 70px);
+    /* MD */
+    @media screen and (max-width: 1200px){
+        .col-250{
+            width: calc(100% / 4 - 10px);
+        }
     }
-}
+
+    /* S */
+    @media screen and (max-width: 950px) {
+        .col-250{
+            width: calc(100% / 2 - 10px);
+        }
+        .img-fluid{
+            width: 80%;
+        }
+    }
+    /* MOBILE */
+    @media screen and (max-width: 750px){
+        .nav-bar{
+            width: 70px;
+        }
+        .container{
+            width: calc(100vw - 70px);
+        }
+    }
