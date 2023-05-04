@@ -84,6 +84,9 @@ h3{
     font-size: 18px;
 }
 
+.underline:hover{
+    text-decoration: underline;
+}
 /* LG FIRST */
 /* NAV BAR */
 .nav-bar, .col-350{
@@ -111,6 +114,7 @@ h3{
     width: 35px;
     top: 10px;
     margin-right: 7px;
+    filter: brightness(70%);
 }
 
 .img-extended-navbar, .download, .user{
@@ -192,8 +196,8 @@ hr{
     border: 1px solid rgb(116, 116, 116);
     margin-right: 20px;
     margin-left: 5px;
-    
 }
+
 /* HEADER */
 
 #header{
@@ -215,7 +219,7 @@ hr{
     border-radius: 40px;
 }
 
-.button:hover{
+.button:hover, .play:hover{
     transform: scale(1.2);
 }
 /* MAIN */
@@ -231,7 +235,7 @@ li.inline{
     padding: 20px;
 }
 
-.hover-cat:hover{
+.hover-white:hover{
     color: white;
 }
 
@@ -303,14 +307,18 @@ li.inline{
 .like{
     margin-right: 10px;
 }
+.like, .folder{
+    color: #828282;
+}
 
 .shuffle, .backward, .play, .forward, .repeat{
     margin: 0 15px;
 }
 
 .play{
-    font-size: 30px;
-    transform: translateY(8px);
+    font-size: 32px;
+    position: relative;
+    top: 8px;
 }
 
 .command-bar{
@@ -355,7 +363,7 @@ li.inline{
   .volume-row{
     margin-right: 20px;
   }
-  
+
 /* RESPONSIVE */
 
     /* MD */
