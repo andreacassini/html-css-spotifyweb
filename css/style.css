@@ -44,6 +44,7 @@ a, #header-button{
 }
 .img-fluid{
     width: 100%;
+    margin-bottom: 10px;
 }
 
 .md{
@@ -224,6 +225,7 @@ hr{
 li.inline{
     padding: 20px;
 }
+
 
 /* BOTTOM BAR */
 #bottom-bar{
