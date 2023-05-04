@@ -231,6 +231,11 @@ li.inline{
     padding: 20px;
 }
 
+.hover-cat:hover{
+    color: white;
+}
+
+
 .play-card{
     position: absolute;
     left: 50%;
@@ -253,6 +258,7 @@ li.inline{
     filter: opacity(1);
     filter: drop-shadow(0px 0px 10px black);
 }
+
 /* BOTTOM BAR */
 #bottom-bar{
     display: flex;
