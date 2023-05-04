@@ -7,6 +7,7 @@
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Konkhmer+Sleokchher&family=Rubik+Mono+One&display=swap" rel="stylesheet">
+        <link rel="shortcut icon" type="image/png" href="./spotify/img/favicon.ico">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
         <link rel="stylesheet" href="./css/style.css">
         <title>Spotify</title>
@@ -22,13 +23,14 @@
                         <div class="top-side">
                             <img src="./spotify/img/logo.svg" class="logo">
                             <ul>
-                                <li><a href="">Home</a></li>
-                                <li><a href="">Cerca</a></li>
-                                <li><a href="">La tua libreria</a></li>
+                                <li><a href="" class="white"><img src="./spotify/img/home.svg" class="img-extended-navbar">Home</a></li>
+                                <li><a href=""><img src="./spotify/img/search.svg" class="img-extended-navbar">Cerca</a></li>
+                                <li><a href=""><img src="./spotify/img/libreria.svg" class="img-extended-navbar">La tua libreria</a></li>
                             </ul>
-                            <h3 class="uppercase">Playlist</h3>
-                            <ul>
-                                <li><a href="">Crea Playlist</a></li>
+                            <ul class="overflow">
+                                <h3 class="uppercase">Playlist</h3>
+                                <li><a href="">
+                                    <i class="fa-sharp fa-solid fa-plus plus" style="color: #000000;"></i>Crea Playlist</a></li>
                                 <li><a href="">Nome Playlist</a></li>
                                 <li><a href="">Nome Playlist</a></li>
                                 <li><a href="">Nome Playlist</a></li>
@@ -39,24 +41,28 @@
                             </ul>
                         </div>
                         <div class="bottom-side">
-                            <img src="./spotify/img/download.svg" class="img-nav-bar">
-                            <p class="inline">Installa app</p>
+                            <div class="install">
+                                <img src="./spotify/img/download.svg" class="download">
+                                <p class="inline">Installa app</p>
+                            </div>
                             <hr>
-                            <img src="./spotify/img/profile.svg" class="img-nav-bar">
-                            <h3 class="inline">John Doe</h3>
+                            <div class="profile">
+                                <img src="./spotify/img/profile.svg" class="user">
+                                <h3 class="inline">John Doe</h3>
+                            </div>
                         </div>
                     </div>    
                     <!-- COMPRESSED -->
                     <div class="compressed">
                         <div class="content center">
-                            <img src="./spotify/img/logo-small.svg" class="img-nav-bar">
-                            <img src="./spotify/img/home.svg" class="img-nav-bar">
-                            <img src="./spotify/img/search.svg" class="img-nav-bar">
-                            <img src="./spotify/img/libreria.svg" class="img-nav-bar">
+                            <a href=""><img src="./spotify/img/logo-small.svg" class="img-nav-bar"></a>
+                            <a href=""><img src="./spotify/img/home.svg" class="img-nav-bar"></a>
+                            <a href=""><img src="./spotify/img/search.svg" class="img-nav-bar"></a>
+                            <a href=""><img src="./spotify/img/libreria.svg" class="img-nav-bar"></a>
                         </div>
                         <div class="content center">
-                            <img src="./spotify/img/download.svg" class="img-nav-bar">
-                            <img src="./spotify/img/profile.svg" class="img-nav-bar">
+                            <a href=""><img src="./spotify/img/download.svg" class="img-nav-bar"></a>
+                            <a href=""><img src="./spotify/img/profile.svg" class="img-nav-bar"></a>
                         </div>
                     </div>
                 </div>
