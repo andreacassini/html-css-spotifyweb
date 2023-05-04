@@ -27,9 +27,9 @@ body{
 .round{
     border-radius: 50%;
 }
+
 .row{
     width: 100%;
-
 }
 
 .inline{
@@ -62,6 +62,9 @@ a, #header-button{
     text-transform: uppercase;
 }
 
+.space{
+    margin: 10px;
+}
 .content-white, .white, h2, h3{
     color: white;
 }
@@ -69,10 +72,13 @@ a, #header-button{
     color: rgb(116, 116, 116);
 }
 
-h2{
+h2, .margin-left-10{
     margin-left: 10px;
 }
 
+h2{
+    margin-top: 25px;
+}
 h3{
     font-size: 18px;
 }
@@ -141,6 +147,7 @@ h3{
 }
 .logo{
     width: 180px;
+    padding-left: 10px;
 }
 
 .extended{
@@ -178,6 +185,13 @@ h3{
     margin-top: 3px;
     margin-bottom: 15px;
 }
+
+hr{
+    border: 1px solid rgb(116, 116, 116);
+    margin-right: 20px;
+    margin-left: 5px;
+    
+}
 /* HEADER */
 
 #header{
@@ -204,6 +218,11 @@ h3{
     margin: 10px;
     text-align: center;
     padding-top: 5px;
+    margin-top: 30px;
+}
+
+li.inline{
+    padding: 20px;
 }
 
 /* BOTTOM BAR */
