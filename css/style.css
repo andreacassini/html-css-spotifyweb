@@ -231,6 +231,7 @@ hr{
     background-color: rgba(9, 11, 19, 0.767);
     padding-top: 40px;
     padding-bottom: 47px;
+    z-index: 100;
 }
 
 #header-button{
@@ -295,7 +296,7 @@ li.inline{
     bottom: 0;
     left: 0;
     right: 0;
-    z-index: 400;
+    z-index: 300;
     background-color: rgba(40,41,41,255);
     padding: 0 10px;
 }
@@ -364,7 +365,7 @@ li.inline{
     height: 5px;
     border-radius: 20px;
     appearance: none;
-    background-color: rgb(170, 170, 170);
+    background-color: rgb(93, 93, 93);
     margin: 10px 10px;
     vertical-align: middle;
 }
@@ -374,22 +375,29 @@ li.inline{
     height: 5px;
     border-radius: 20px;
     appearance: none;
-    background-color: rgb(170, 170, 170);
+    background-color: rgb(93, 93, 93);
     transform: translateY(-3px);
 }
 
-  input[type="range"]::-webkit-slider-thumb {
-    -webkit-appearance: none;
-  }
-
-  .list, .monitor, .volume{
+.list, .monitor, .volume{
     padding: 8px;
-  }
+}
 
-  .volume-row{
+.volume-row{
     margin-right: 20px;
+}
+
+input[type="range"]::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background-color: rgb(255, 255, 255);
   }
 
+input[type="range"]:hover {
+    background: green;
+  }
 /* RESPONSIVE */
 
     /* MD */
@@ -400,7 +408,7 @@ li.inline{
     }
 
     /* S */
-    @media screen and (max-width: 1000px) {
+    @media screen and (max-width: 1000px){
         .col-250{
             width: calc(100% / 2 - 20px);
         }
