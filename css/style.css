@@ -215,6 +215,9 @@ hr{
     margin: 0 22px;
 }
 
+.top-side{
+    line-height: 2.6;
+}
 /* HEADER */
 
 #header{
