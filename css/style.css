@@ -46,7 +46,7 @@ a, #header-button{
     text-decoration: none;
 }
 .img-fluid{
-    width: 80%;
+    width: 90%;
     margin-bottom: 10px;
 }
 
@@ -327,7 +327,7 @@ li.inline{
     font-size: 15px;
 }
 .save{
-    margin-left: 50px;
+    margin-left: 25px;
     display: flex;
 }
 
