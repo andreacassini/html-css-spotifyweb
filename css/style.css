@@ -106,9 +106,15 @@ h3{
     display: none;
 }
 
+.icons-compressed{
+    display: flex;
+    flex-direction: column;
+    margin: 8px;
+}
+
 .img-nav-bar{
     width: 30px;
-    margin: 5px;
+    margin: px;
 }
 .img-extended-navbar{
     width: 35px;
