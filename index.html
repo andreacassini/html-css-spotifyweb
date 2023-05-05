@@ -6,7 +6,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Konkhmer+Sleokchher&family=Rubik+Mono+One&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
         <link rel="shortcut icon" type="image/png" href="./spotify/img/favicon.ico">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
         <link rel="stylesheet" href="./css/style.css">
@@ -23,14 +23,18 @@
                         <div class="top-side">
                             <a href=""><img src="./spotify/img/logo.svg" class="logo"></a>
                             <ul>
-                                <li><a href="" class="white"><img src="./spotify/img/home.svg" class="img-extended-navbar">Home</a></li>
+                                <li class="border-left"><a href="" class="white"><img src="./spotify/img/home.svg" class="img-extended-navbar">Home</a></li>
                                 <li><a href="" class="hover-white"><img src="./spotify/img/search.svg" class="img-extended-navbar">Cerca</a></li>
                                 <li><a href="" class="hover-white"><img src="./spotify/img/libreria.svg" class="img-extended-navbar">La tua libreria</a></li>
                             </ul>
                             <ul class="overflow">
-                                <h3 class="uppercase">Playlist</h3>
-                                <li><a href="" class="hover-white">
-                                    <i class="fa-sharp fa-solid fa-plus plus" style="color: #000000; "></i>Crea Playlist</a></li>
+                                <h3 class="uppercase" id="title-playlist">Playlist</h3>
+                                <li>
+                                    <a href="" class="hover-white">
+                                    <i class="fa-sharp fa-solid fa-plus plus" style="color: #000000; "></i>
+                                    Crea Playlist
+                                    </a>
+                                </li>
                                 <li><a href="" class="hover-white">Nome Playlist</a></li>
                                 <li><a href="" class="hover-white">Nome Playlist</a></li>
                                 <li><a href="" class="hover-white">Nome Playlist</a></li>
@@ -212,7 +216,7 @@
                     </div>
                         <div class="title">
                             <h3>Sinister</h3>
-                            <a href=""><p class="underline">Brano Nome</p></a>
+                            <a href=""><div class="underline">Brano Nome</div></a>
                         </div>
                     <div class="save">
                         <a href=""><i class="fa-regular fa-heart like hover-white"></i></a>

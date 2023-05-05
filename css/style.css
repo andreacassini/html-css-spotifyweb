@@ -5,7 +5,8 @@
 }
 
 body{
-    font-family: 'Konkhmer Sleokchher', cursive;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
 }
 
 /* UTILITIES */
@@ -15,7 +16,7 @@ body{
     padding-bottom: 30px;
 }
 .container{
-    margin-top: 100px;
+    margin-top: 135px;
     margin-left: 300px;
     padding-left: 10px;
 }
@@ -35,8 +36,9 @@ body{
 .inline{
     display: inline;
 }
-ul{
-    padding: 10px;
+
+li, #title-playlist, .logo{
+    padding-left: 20px;
 }
 
 a, #header-button{
@@ -73,23 +75,30 @@ a, #header-button{
     color: rgb(116, 116, 116);
 }
 
+p{
+    margin-top: 12px;
+}
 h2, .margin-left-10{
     margin-left: 10px;
 }
 
 h2{
     margin-top: 25px;
+    font-weight: 700;
+    font-size: 30px;
 }
 h3{
     font-size: 18px;
+    margin-top: 10px;
 }
 
 .underline:hover{
     text-decoration: underline;
 }
+
 /* LG FIRST */
 /* NAV BAR */
-.nav-bar, .col-350{
+.nav-bar{
     width: 300px;
 }
 .nav-bar{
@@ -97,7 +106,7 @@ h3{
     display: flex;
     top: 0;
     left: 0;
-    bottom: 93px;
+    bottom: 85px;
     z-index: 200;
     background-color: black;
 }
@@ -114,7 +123,6 @@ h3{
 
 .img-nav-bar{
     width: 30px;
-    margin: px;
 }
 .img-extended-navbar{
     width: 35px;
@@ -123,17 +131,16 @@ h3{
     filter: brightness(70%);
 }
 
-.img-extended-navbar, .download, .user{
-    position: relative;
+.border-left{
+    border-left: 3px solid rgb(179, 255, 0);
 }
-
 .download, .download-compressed{
-    top: 7px;
     margin-right: 7px;
 }
 
 .download{
     width: 22px;
+    margin-left: 20px;
 }
 .download-compressed{
     width: 28px;
@@ -147,6 +154,7 @@ h3{
 
 .user{
     margin-right: 8px;
+    margin-left: 20px;
     width: 30px;
     height: 30px;
 }
@@ -158,8 +166,9 @@ h3{
     margin-top: 10px;
 }
 .logo{
-    width: 180px;
-    padding-left: 10px;
+    width: 210px;
+    margin-left: 5px;
+    margin-bottom: 20px;
 }
 
 .extended{
@@ -167,7 +176,6 @@ h3{
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    padding-left: 15px;
     padding-top: 20px;
 }
 
@@ -200,8 +208,7 @@ h3{
 
 hr{
     border: 1px solid rgb(116, 116, 116);
-    margin-right: 20px;
-    margin-left: 5px;
+    margin: 0 22px;
 }
 
 /* HEADER */
@@ -215,11 +222,12 @@ hr{
     top: 0;
     right: 0;
     background-color: rgba(9, 11, 19, 0.767);
-    padding: 30px 10px;
+    padding-top: 40px;
+    padding-bottom: 47px;
 }
 
 #header-button{
-    padding: 8px 45px;
+    padding: 13px 45px;
     color: white;
     border: 1px solid white;
     border-radius: 40px;
@@ -271,6 +279,7 @@ li.inline{
 
 /* BOTTOM BAR */
 #bottom-bar{
+    height: 85px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -341,7 +350,7 @@ li.inline{
     margin-top: 8px;
 }
 .playing-bar{
-    width: 30vw;
+    width: 24vw;
     height: 5px;
     border-radius: 20px;
     appearance: none;
@@ -350,7 +359,7 @@ li.inline{
 }
 
 .volume-bar{
-    width: 8vw;
+    width: 4vw;
     height: 5px;
     border-radius: 20px;
     appearance: none;
@@ -383,9 +392,6 @@ li.inline{
     @media screen and (max-width: 1000px) {
         .col-250{
             width: calc(100% / 2 - 20px);
-        }
-        h2{
-            margin-left: 35px;
         }
         .save{
             flex-direction: column;
