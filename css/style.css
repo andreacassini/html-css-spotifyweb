@@ -16,7 +16,7 @@ body{
     padding-bottom: 30px;
 }
 .container{
-    margin-top: 135px;
+    margin-top: 115px;
     margin-left: 300px;
     padding-left: 10px;
 }
@@ -119,16 +119,17 @@ h3{
     display: flex;
     flex-direction: column;
     margin: 8px;
+    line-height: 2;
 }
 
 .img-nav-bar{
-    width: 30px;
+    width: 35px;
 }
 .img-extended-navbar{
     width: 35px;
-    top: 10px;
     margin-right: 7px;
     filter: brightness(70%);
+    vertical-align: middle;
 }
 
 .border-left{
@@ -141,6 +142,7 @@ h3{
 .download{
     width: 22px;
     margin-left: 20px;
+    vertical-align: middle;
 }
 .download-compressed{
     width: 28px;
@@ -155,13 +157,15 @@ h3{
 .user{
     margin-right: 8px;
     margin-left: 20px;
+    margin-bottom: 5px;
     width: 30px;
     height: 30px;
+    vertical-align: middle;
 }
 
 .user-compressed{
-    width: 40px;
-    height: 40px;
+    width: 35px;
+    height: 35px;
     margin: 0px 10px;
     margin-top: 10px;
 }
@@ -247,6 +251,7 @@ hr{
 
 li.inline{
     padding: 20px;
+    line-height: 4;
 }
 
 .hover-white:hover{
@@ -289,6 +294,7 @@ li.inline{
     right: 0;
     z-index: 400;
     background-color: rgba(40,41,41,255);
+    padding: 0 10px;
 }
 
 #img-bottom-bar{
@@ -347,7 +353,8 @@ li.inline{
     margin-top: 10px;
 }
 .time-row{
-    margin-top: 8px;
+    margin-top: 15px;
+    margin-bottom: 10px
 }
 .playing-bar{
     width: 24vw;
@@ -355,7 +362,8 @@ li.inline{
     border-radius: 20px;
     appearance: none;
     background-color: rgb(170, 170, 170);
-    margin: 10px 17px 20px
+    margin: 10px 10px;
+    vertical-align: middle;
 }
 
 .volume-bar{
@@ -395,6 +403,7 @@ li.inline{
         }
         .save{
             flex-direction: column;
+            line-height: 1.4;
         }
         
     }
