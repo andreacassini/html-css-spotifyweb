@@ -311,8 +311,10 @@ li.inline{
 }
 
 .song{
+    width: 290px;
     display: flex;
     align-items: center;
+    background-color: red;
 }
 
 .title, .time{
@@ -349,6 +351,7 @@ li.inline{
 }
 
 .command-bar{
+    width: 45%;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -359,21 +362,22 @@ li.inline{
     margin-top: 10px;
 }
 .time-row{
+    display: flex;
+    align-items: center;
     margin-top: 15px;
     margin-bottom: 10px
 }
 .playing-bar{
-    width: 24vw;
-    height: 5px;
-    border-radius: 20px;
-    appearance: none;
+    width: 25vw;
+    height: 4px;
+    border-radius: 4px;
     background-color: rgb(93, 93, 93);
-    margin: 10px 10px;
-    vertical-align: middle;
+    margin: 0 10px;
+    cursor: pointer;
 }
 
 .volume-bar{
-    width: 4vw;
+    width: 100px;
     height: 5px;
     border-radius: 20px;
     appearance: none;
@@ -386,7 +390,9 @@ li.inline{
 }
 
 .volume-row{
-    margin-right: 20px;
+    width: 290px;
+    text-align: right;
+    margin-right: 10px;
 }
 
 input[type="range"]::-webkit-slider-thumb {
