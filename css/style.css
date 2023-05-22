@@ -314,7 +314,6 @@ li.inline{
     width: 290px;
     display: flex;
     align-items: center;
-    background-color: red;
 }
 
 .title, .time{
